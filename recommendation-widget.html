@@ -1,8 +1,8 @@
 <div class="title_${dyVariationId}">${Title}</div>
 <div class="recs_${dyVariationId}" data-module="${module name}">
   ${#Recommendation}
-    <div data-position="${data position}" data-item-type="${data item type}" data-id="${deal id}" data-flags="${data flags}">
-      <a href="${url}" class="rec_item_${dyVariationId}" dy-needs-disclosure="${needs discolsure}">
+    <div class="rec_container" data-item-type="${data item type}" data-id="${deal id}" data-flags="${data flags}">
+      <a href="/p/${deal id}" class="rec_item_${dyVariationId}" dy-needs-disclosure="${needs discolsure}">
         <img src=${Image_url}>
         <img src="${pixel}" height="1" width="1" style="position: absolute; border:none;">
         <div class="rec_price">$${Price}</div>
