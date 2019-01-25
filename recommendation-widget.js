@@ -5,6 +5,10 @@ $('.rec_container').each(function(position){
 });
 
 var products = document.querySelectorAll('[dy-needs-disclosure]');
+if (products > 1) {
+  $('#disclosure').addClass('show');
+}
+
 
 console.log(window.sst)
 
