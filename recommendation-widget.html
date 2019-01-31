@@ -1,12 +1,14 @@
-<div class="title_${dyVariationId} row large-12 medium-12 small-12">${Title}</div>
-<div class="recs_${dyVariationId} row" data-module="${module name}">
+<div class="title_${dyVariationId} row large-12 medium-12 small-12">
+  <h4 class="miniature-capital-header center-aligned">${Title}</h4>
+</div>
+<div class="recs_${dyVariationId} flexbox-container" data-module="${module name}">
   ${#Recommendation}
-    <div class="rec_container col large-4 medium-4 small-12" data-item-type="${data item type}" data-id="${deal id}" data-flags="${data flags}">
-      <a href="/p/${deal id}" class="rec_item_${dyVariationId}">
-        <img src=${Image_url}>
+    <div class="rec_container flexbox-tile" data-item-type="${data item type}" data-id="${deal id}" data-flags="${data flags}" data-requires-disclosure="${requires_disclosure}">
+      <a href="/p/${deal id}" class="rec_item_${dyVariationId} tile">
+        <img src="${Image_url}" alt="${Name}">
         <img src="${third_party_pixel}" height="1" width="1" style="position: absolute; border:none; display: none;">
         <div class="rec_price">$${Price}</div>
-        <div class="rec_name">${Name}</div>
+        <div class="rec_name">${Name} <span class="disclosure-link">*</span></div>
       </a>
     </div>
   ${/Recommendation}
