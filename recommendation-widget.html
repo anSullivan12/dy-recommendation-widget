@@ -5,10 +5,10 @@
   ${#Recommendation}
     <div class="rec_container flexbox-tile" data-item-type="${data item type}" data-id="${deal id}" data-flags="${data flags}" data-requires-disclosure="${requires_disclosure}">
       <a href="/p/${deal id}" class="rec_item_${dyVariationId} tile">
-        <img src="${Image_url}">
+        <img src="${Image_url}" alt="${Name}">
         <img src="${third_party_pixel}" height="1" width="1" style="position: absolute; border:none; display: none;">
         <div class="rec_price">$${Price}</div>
-        <div class="rec_name">${Name} <a class="disclosure-link" href="#disclosure">*</a></div>
+        <div class="rec_name">${Name} <span class="disclosure-link">*</span></div>
       </a>
     </div>
   ${/Recommendation}
